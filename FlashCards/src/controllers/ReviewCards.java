@@ -95,7 +95,11 @@ public class ReviewCards {
 	//removes a flashcard from the hashmap
 	public static void removeFlashCard() {
 		
+		//get input from gui
+		String keyToRemove = "GuiInput";
 		
+		//remove flashcard with the key from the hashmap
+		cards.remove(keyToRemove);
 		
 	}
 	
