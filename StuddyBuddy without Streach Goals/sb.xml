@@ -2,7 +2,7 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>C:\Users\Tyler\Desktop\StuddyBuddy without Streach Goals\test.jar</jar>
+  <jar>C:\Users\Tyler\Desktop\StuddyBuddy without Streach Goals\StudyBuddy.jar</jar>
   <outfile>C:\Users\Tyler\Desktop\StuddyBuddy without Streach Goals\StudyBuddy.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
