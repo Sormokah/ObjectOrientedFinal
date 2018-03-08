@@ -1,19 +1,18 @@
 package controllers;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.Random;
 
 import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.stage.Stage;
 import models.Quiz;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 
 public class QuizTime {
 	private static ArrayList<Quiz> quiz = new ArrayList<Quiz>();
@@ -29,6 +28,18 @@ public class QuizTime {
 				incorrect++;
 			}
 		}
+	}
+	
+	public static ArrayList<String> randomizeChoices(ArrayList<String> choices) {
+		Random ran = new Random();
+		ArrayList<String> temp = new ArrayList<String>();
+		while(!choices.isEmpty()) {
+			int num = ran.nextInt(choices.size());
+			temp.add(choices.get(num));
+			choices.remove(num);
+		}
+		return temp;
+		
 	}
 
 	// This method is to add the a question to the array list 'quiz'
@@ -53,7 +64,8 @@ public class QuizTime {
 				addAChoice(choices);
 			}
 		}
-		return choices;
+		
+		return randomizeChoices(choices);
 	}
 
 	// This method is just to print out true and false options in the arrayList
