@@ -3,7 +3,7 @@
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
   <jar>C:\Users\Tyler\Desktop\StuddyBuddy without Streach Goals\StuddyBuddy.jar</jar>
-  <outfile>C:\Users\Tyler\Desktop\StuddyBuddy without Streach Goals\StuddyBuddy.exe</outfile>
+  <outfile>C:\Users\Tyler\Desktop\StuddyBuddy without Streach Goals\StudyBuddy.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
